@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="site.html" target="_blank">GS Filmes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="carrinho.html" target="_blank">Carrinho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faleconosco.html" target="_blank">Fale Conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cep.html" target="_blank">Cliente</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Procura</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="col-md-8 offset-md-2 my-5 shadow p-5 mb-5 bg-warning rounded">
+        
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <div class="row">
+                <div class="col-3 "><input type="text" name="name" placeholder="Seu Nome"></div>
+                <div class="col-3 offset-1"><input type="text" name="email" placeholder="Seu Email" /></div>
+                <div class="col-3 offset-1"><textarea  name="message" rows="1"></textarea></div>
+            </div>
+            <input type="hidden" name="accessKey" value="7a38c052-7def-4b77-8e5a-0a2238bafb69">
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+</html>

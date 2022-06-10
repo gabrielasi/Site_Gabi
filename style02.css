@@ -1,0 +1,23 @@
+
+body{
+    font-family: 'Pacifico', cursive;
+}
+img{
+    width: 10%;
+}
+.gs{
+    width: 50%;
+}
+/* *{
+    border: 1px solid black;
+} */
+p{
+    margin-left: 5px;
+    color: rgb(245, 181, 6);
+}
+h4{
+    color: rgb(245, 181, 6);
+}
+.one{
+    color: black;
+}

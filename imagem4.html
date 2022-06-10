@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A dark reflection</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="zoom.css">
+
+
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  </style>
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="site.html" target="_blank">GS Filmes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="carrinho.html" target="_blank">Carrinho</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faleconosco.html" target="_blank">Fale Conosco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cep.html" target="_blank">Cliente</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procura</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <div class="row">
+            <div class="col-md-8 bg-secondary offset-md-2 my-7 shadow p-6 mb-6 bg-white rounded" style="text-align: center;">
+                <div class="col" id="card1">
+                    <picture>
+                        <img src="71UINTw4X2L._RI_.jpg" alt="">
+                    </picture>
+                </div>
+                    <h2>A Dark Reflection</h2>
+                        <h4 class="one"> R$ 23,00</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae sunt qui culpa nemo iste necessitatibus mollitia fugit debitis eos, exercitationem incidunt! Magni similique blanditiis nostrum, ut molestiae quia recusandae?
+
+                        <div class="col mt-2 mb-3">
+                            <div align="center">
+                                A Dark Reflection<strong>R$ 23,00</strong><br>
+                                qtd: <input type="number" value="1" min="1" max="100" id="qtd4">
+                                <button type="button" id="adicionar4" id="produto4" onclick="AddCarrinho('A Dark Reflection', document.getElementById('qtd4').value, '23.00', 4)"> Comprar </button>
+                                <p align="center">
+                                    <a href="carrinho.html"> Ver Carrinho de compras </a>
+                                </p>	
+                                        
+                                <script>
+                                    function AddCarrinho(produto, qtd, valor, posicao)
+                                    {
+                                        localStorage.setItem("produto" + posicao, produto);
+                                        localStorage.setItem("qtd" + posicao, qtd);
+                                        valor = valor * qtd;
+                                        localStorage.setItem("valor" + posicao, valor);
+                                        alert("Produto adicionado ao carrinho!");
+                                    }
+                                </script>
+                            </div> 
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="zoom.js"></script>
+
+</html>

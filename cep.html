@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style02.css">
+    <title>Consultando CEP</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="site.html" target="_blank">GS Filmes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="carrinho.html" target="_blank">Carrinho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faleconosco.html" target="_blank">Fale Conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cep.html" target="_blank">Cliente</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Procura</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <form class="col-md-8 offset-md-2 my-5 shadow p-5 mb-5 bg-white rounded">
+      <div class="mb-2">
+        <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome">
+            <div class="form-text">Indentificação</div>
+      </div>
+      <div class="mb-2">
+        <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf">
+            <div class="form-text">CPF.</div>
+      </div> 
+  <div class="mb-2">
+    <label for="cep" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="cep" aria-describedby="emailHelp">
+            <div class="form-text">00000-000</div>
+  </div>
+  <div class="mb-2">
+    <label for="logradouro" class="form-label">Logradouro</label>
+        <input type="text" class="form-control" id="logradouro">
+            <div class="form-text">Rua.</div>
+  </div>
+  <div class="mb-2">
+    <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro">
+            <div class="form-text">bairro</div>
+  </div>
+  <div class="mb-2">
+    <label for="localidade" class="form-label">Localidade</label>
+        <input type="text" class="form-control" id="localidade">
+            <div class="form-text">Cidade</div>
+  </div>
+  <div class="mb-2">
+    <label for="uf" class="form-label">UF</label>
+        <input type="text" class="form-control" id="uf">
+        <div class="form-text">Estado</div>
+  </div>
+          <a href="site.html">
+            <button type="button" class="btn btn-dark">LOGAR</button>
+          </a>
+</form>
+
+
+</body>
+<script src="form2.js"></script>
+</html>

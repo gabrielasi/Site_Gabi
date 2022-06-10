@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamentos</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+</style>
+
+<body onload="passarValor()">
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="site.html" target="_blank">GS Filmes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="carrinho.html" target="_blank">Carrinho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faleconosco.html" target="_blank">Fale Conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cep.html" target="_blank">Cliente</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Procura</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="col-md-6 offset-md-2 my-5 shadow p-5 mb-5 bg-secondary rounded">
+    <div class="form-check">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="ipt1" onclick="if(document.getElementById('av').disabled==true){
+        document.getElementById('av').disabled=true, document.getElementById('card').disabled = true, document.getElementById('card').value = ''
+     }
+     ">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Á vista
+        </label>
+      </div>
+    </div>
+    <input class="form-control" type="text" name="av" id="av" disabled="">
+    <div class="form-check">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="ipt2" onclick="if(document.getElementById('card').disabled = true){
+          document.getElementById('card').disabled = false,
+          document.getElementById('av').disabled=true
+      }">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Cartão de crédito
+        </label>
+      </div>
+    </div>
+    <select class="form-select" aria-label="Default select example" disabled id="card" onchange="parcelado()">
+      <option selected>Quantas vezes</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <div class="mb-2">
+      <input class="form-control mt-1" type="text" name="" id="ray" placeholder="Valor Parcelado " disabled="">
+    </div>
+    <!-- <input class="form-control" list="datalistOptions" id="valor" placeholder="Valor" disabled> -->
+  </div>
+</body>
+
+<script src="pagaemntos.js"></script>
+
+</html>
